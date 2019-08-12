@@ -204,6 +204,7 @@ export interface IDropzoneProps {
   minSizeBytes: number
   maxSizeBytes: number
   maxFiles: number
+  withCredentials: boolean
 
   validate?(file: IFileWithMeta): any // usually a string, but can be anything
 
@@ -746,6 +747,7 @@ Dropzone.defaultProps = {
   classNames: {},
   styles: {},
   addClassNames: {},
+  withCredentials: false
 }
 
 // @ts-ignore
